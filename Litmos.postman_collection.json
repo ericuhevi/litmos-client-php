@@ -1,0 +1,611 @@
+{
+	"info": {
+		"_postman_id": "08aa79a6-0d87-4c58-8a02-42fc34cc30ea",
+		"name": "Litmos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetInfo",
+			"item": [
+				{
+					"name": "GetBulkUsersJson",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://api.litmos.com/v1.svc/users?source=test&format=json",
+							"protocol": "https",
+							"host": [
+								"api",
+								"litmos",
+								"com"
+							],
+							"path": [
+								"v1.svc",
+								"users"
+							],
+							"query": [
+								{
+									"key": "source",
+									"value": "test"
+								},
+								{
+									"key": "format",
+									"value": "json"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetCoursesJson",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.litmos.com/v1.svc/courses?source=test&format=json&",
+							"protocol": "https",
+							"host": [
+								"api",
+								"litmos",
+								"com"
+							],
+							"path": [
+								"v1.svc",
+								"courses"
+							],
+							"query": [
+								{
+									"key": "source",
+									"value": "test"
+								},
+								{
+									"key": "format",
+									"value": "json"
+								},
+								{
+									"key": "",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetCourseJson",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.litmos.com/v1.svc/courses/2hbispVqQgU1?source=test&format=json",
+							"protocol": "https",
+							"host": [
+								"api",
+								"litmos",
+								"com"
+							],
+							"path": [
+								"v1.svc",
+								"courses",
+								"2hbispVqQgU1"
+							],
+							"query": [
+								{
+									"key": "source",
+									"value": "test"
+								},
+								{
+									"key": "format",
+									"value": "json"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetCourseUsersJson",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.litmos.com/v1.svc/courses/2hbispVqQgU1/users?source=test&format=json",
+							"protocol": "https",
+							"host": [
+								"api",
+								"litmos",
+								"com"
+							],
+							"path": [
+								"v1.svc",
+								"courses",
+								"2hbispVqQgU1",
+								"users"
+							],
+							"query": [
+								{
+									"key": "source",
+									"value": "test"
+								},
+								{
+									"key": "format",
+									"value": "json"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetLoginsWithinDateRangeJson",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.litmos.com/v1.svc/org/users/logins?source=test/org/users/logins?source=test&since=2022-04-05 00:00:00&to=2022-04-11 00:00:00&format=json",
+							"protocol": "https",
+							"host": [
+								"api",
+								"litmos",
+								"com"
+							],
+							"path": [
+								"v1.svc",
+								"org",
+								"users",
+								"logins"
+							],
+							"query": [
+								{
+									"key": "source",
+									"value": "test/org/users/logins?source=test"
+								},
+								{
+									"key": "since",
+									"value": "2022-04-05 00:00:00"
+								},
+								{
+									"key": "to",
+									"value": "2022-04-11 00:00:00"
+								},
+								{
+									"key": "format",
+									"value": "json"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetModuleResultsWithinRangeJson",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.litmos.com/v1.svc/org/modules/results?source=test&since=2022-04-05 00:00:00&to=2022-04-11 00:00:00&format=json",
+							"protocol": "https",
+							"host": [
+								"api",
+								"litmos",
+								"com"
+							],
+							"path": [
+								"v1.svc",
+								"org",
+								"modules",
+								"results"
+							],
+							"query": [
+								{
+									"key": "source",
+									"value": "test"
+								},
+								{
+									"key": "since",
+									"value": "2022-04-05 00:00:00"
+								},
+								{
+									"key": "to",
+									"value": "2022-04-11 00:00:00"
+								},
+								{
+									"key": "format",
+									"value": "json"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetCourseResultsDetailsWithinDateRangeJson",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.litmos.com/v1.svc/org/results/details?source=test&since=2022-04-05 00:00:00&to=2022-04-11 00:00:00&format=json",
+							"protocol": "https",
+							"host": [
+								"api",
+								"litmos",
+								"com"
+							],
+							"path": [
+								"v1.svc",
+								"org",
+								"results",
+								"details"
+							],
+							"query": [
+								{
+									"key": "source",
+									"value": "test"
+								},
+								{
+									"key": "since",
+									"value": "2022-04-05 00:00:00"
+								},
+								{
+									"key": "to",
+									"value": "2022-04-11 00:00:00"
+								},
+								{
+									"key": "format",
+									"value": "json"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetCourseUsersCreatedWithinDateRangeJson",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.litmos.com/v1.svc/org/users/courses?source=test&since=2022-04-05 00:00:00&to=2022-04-11 00:00:00&format=json",
+							"protocol": "https",
+							"host": [
+								"api",
+								"litmos",
+								"com"
+							],
+							"path": [
+								"v1.svc",
+								"org",
+								"users",
+								"courses"
+							],
+							"query": [
+								{
+									"key": "source",
+									"value": "test"
+								},
+								{
+									"key": "since",
+									"value": "2022-04-05 00:00:00"
+								},
+								{
+									"key": "to",
+									"value": "2022-04-11 00:00:00"
+								},
+								{
+									"key": "format",
+									"value": "json"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetUSerAchievementsWithinDateRange",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.litmos.com/v1.svc/achievements?source=test&since=2022-04-05 00:00:00&to=2022-04-12 00:00:00&format=json",
+							"protocol": "https",
+							"host": [
+								"api",
+								"litmos",
+								"com"
+							],
+							"path": [
+								"v1.svc",
+								"achievements"
+							],
+							"query": [
+								{
+									"key": "source",
+									"value": "test"
+								},
+								{
+									"key": "since",
+									"value": "2022-04-05 00:00:00"
+								},
+								{
+									"key": "to",
+									"value": "2022-04-12 00:00:00"
+								},
+								{
+									"key": "format",
+									"value": "json"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"item": [
+				{
+					"name": "GetUserByEmailAddressJson",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.litmos.com/v1.svc/users?source=test&search=ericuhe@gmail.com&format=json",
+							"protocol": "https",
+							"host": [
+								"api",
+								"litmos",
+								"com"
+							],
+							"path": [
+								"v1.svc",
+								"users"
+							],
+							"query": [
+								{
+									"key": "source",
+									"value": "test"
+								},
+								{
+									"key": "search",
+									"value": "ericuhe@gmail.com"
+								},
+								{
+									"key": "format",
+									"value": "json"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetUserLoginTokenByIdJson",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "https://api.litmos.com/v1.svc/users/SWB2puRd7nRkjfPsb7ujpg2?source=test&format=json",
+							"protocol": "https",
+							"host": [
+								"api",
+								"litmos",
+								"com"
+							],
+							"path": [
+								"v1.svc",
+								"users",
+								"SWB2puRd7nRkjfPsb7ujpg2"
+							],
+							"query": [
+								{
+									"key": "source",
+									"value": "test"
+								},
+								{
+									"key": "format",
+									"value": "json"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Signup",
+			"item": [
+				{
+					"name": "GetSignupTokens",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.litmos.com/v1.svc/tokens?source=test&format=json",
+							"protocol": "https",
+							"host": [
+								"api",
+								"litmos",
+								"com"
+							],
+							"path": [
+								"v1.svc",
+								"tokens"
+							],
+							"query": [
+								{
+									"key": "source",
+									"value": "test"
+								},
+								{
+									"key": "format",
+									"value": "json"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PostCreateSignupTokenJson",
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "34566681-e1ff-4fc0-b344-63488336385d",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "apiKey",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/xml",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/xml",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/vnd.api+json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<TOKENS>\n    <TOKEN>\n        <TOKENCODE>TestTokenPost</TOKENCODE>\n        <TOKENTYPE>1</TOKENTYPE>\n        <TOKENTYPEID>2hbispVqQgU1</TOKENTYPEID>\n        <ACTIVE>true</ACTIVE>\n        <MAXIMUMACTIVATIONS>10</MAXIMUMACTIVATIONS>\n        <TOKENEXPIRATION>2022-07-01 00:00:00</TOKENEXPIRATION>\n    <TOKEN>\n</TOKENS>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.litmos.com/v1.svc/tokens?",
+							"protocol": "https",
+							"host": [
+								"api",
+								"litmos",
+								"com"
+							],
+							"path": [
+								"v1.svc",
+								"tokens"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AddUserToCourseJSON",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n    {\n        \"Id\": \"NtA0J_slh801\"\n    }\n]"
+						},
+						"url": {
+							"raw": "https://api.litmos.com/v1.svc/users/SWB2puRd7nRkjfPsb7ujpg2/courses?",
+							"protocol": "https",
+							"host": [
+								"api",
+								"litmos",
+								"com"
+							],
+							"path": [
+								"v1.svc",
+								"users",
+								"SWB2puRd7nRkjfPsb7ujpg2",
+								"courses"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "value",
+				"value": "34566681-e1ff-4fc0-b344-63488336385d",
+				"type": "string"
+			},
+			{
+				"key": "key",
+				"value": "apiKey",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

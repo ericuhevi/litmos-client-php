@@ -1,4 +1,5 @@
 <?php
+ini_set('include_path', '/usr/local/share/pear/');
 require_once 'HTTP/Request2.php';
 $request = new HTTP_Request2();
 $request->setUrl('https://api.litmos.com/v1.svc/users?source=test&search=ericuhe@gmail.com&format=json');
