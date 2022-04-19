@@ -1,0 +1,47 @@
+<?php
+function addUser()
+{
+
+    $userArray = array(
+        
+            "UserName" => "LennyLitmos2",
+            "FirstName" => "Leonard",
+            "LastName" => "Somtil2",
+            "FullName" => "LeondardMSomtil2",
+            "Email" => "LeonardSomtil2@sap.com",
+            "AccessLevel" => "Learner",
+            "Active" => "true",
+            "JobTitle" => "Mascot",
+            "ProfileType" => "External"
+        
+    );
+    $json = json_encode($userArray);
+    echo($json);
+    $curl = curl_init();
+
+    curl_setopt_array($curl, array(
+        CURLOPT_URL => 'https://api.litmos.com/v1.svc/users?format=json&source=vi_api_app',
+        CURLOPT_RETURNTRANSFER => true,
+        CURLOPT_ENCODING => '',
+        CURLOPT_MAXREDIRS => 10,
+        CURLOPT_TIMEOUT => 0,
+        CURLOPT_FOLLOWLOCATION => true,
+        CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+        CURLOPT_CUSTOMREQUEST => 'POST',
+        CURLOPT_POSTFIELDS => $json,
+          CURLOPT_HTTPHEADER => array(
+            'Content-Type:  application/json',
+            'config_authType:  API_key',
+            'config_packageName:  Litmos',
+            'config_actualUrl:  https://api.litmos.com/v1.svc',
+            'config_urlPattern:  https://api.litmos.com/v1.svc',
+            'config_apiName:  LitmosAPIdetails',
+            'APIKey:  34566681-e1ff-4fc0-b344-63488336385d'
+          ),
+    ));
+
+    $response = curl_exec($curl);
+    curl_close($curl);
+    echo $response;
+}
+addUser();
